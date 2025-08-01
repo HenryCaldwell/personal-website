@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import ActivityBar from "./components/ActivityBar";
 import StatusBar from "./components/StatusBar";
+import SideBar from "./components/side-bar/SideBar";
 
 export default function App() {
   const [activePanel, setActivePanel] = useState("explorer");
@@ -9,12 +9,7 @@ export default function App() {
   return (
     <div className="app-content">
       <div className="main-content">
-        <ActivityBar
-          active={activePanel}
-          onSelect={(panel) =>
-            setActivePanel(panel === activePanel ? null : panel)
-          }
-        />
+        <SideBar />
       </div>
       <div className="footer-content">
         <StatusBar />
