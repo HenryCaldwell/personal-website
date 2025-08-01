@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 import ActivityBar from "./activity-bar/ActivityBar";
 import ExplorerPanel from "./explorer-panel/ExplorerPanel";
 import SearchPanel from "./search-panel/SearchPanel";
@@ -12,7 +12,10 @@ const PANEL_COMPONENTS = {
 };
 
 export default function SideBar() {
-  const [activePanel, setActivePanel] = useState("explorer");
+  const [activePanel, setActivePanel] = useLocalStorage(
+    "activePanel",
+    "explorer"
+  );
   const ActivePanel = activePanel ? PANEL_COMPONENTS[activePanel] : null;
 
   return (

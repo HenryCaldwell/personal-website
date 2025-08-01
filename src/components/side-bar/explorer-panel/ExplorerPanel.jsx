@@ -1,18 +1,14 @@
-import { useEffect, useState } from "react";
 import ellipsis from "../../../assets/icons/ellipsis.svg";
 import { fileData } from "../../../data/fileData";
+import { useLocalStorage } from "../../../hooks/useLocalStorage";
 import "./ExplorerPanel.css";
 import FileTree from "./FileTree";
 
 export default function ExplorerPanel() {
-  const [openFolders, setOpenFolders] = useState(() => {
-    const stored = localStorage.getItem("explorerOpenFolders");
-    return stored ? JSON.parse(stored) : [];
-  });
-
-  useEffect(() => {
-    localStorage.setItem("explorerOpenFolders", JSON.stringify(openFolders));
-  }, [openFolders]);
+  const [openFolders, setOpenFolders] = useLocalStorage(
+    "explorerOpenFolders",
+    []
+  );
 
   const toggleFolder = (id) => {
     setOpenFolders((prev) =>
