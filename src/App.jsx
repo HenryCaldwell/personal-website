@@ -1,11 +1,8 @@
-import { useState } from "react";
 import "./App.css";
 import StatusBar from "./components/StatusBar";
 import SideBar from "./components/side-bar/SideBar";
 
 export default function App() {
-  const [activePanel, setActivePanel] = useState("explorer");
-
   return (
     <div className="app-content">
       <div className="main-content">
