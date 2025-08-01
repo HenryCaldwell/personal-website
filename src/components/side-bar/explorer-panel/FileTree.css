@@ -1,0 +1,49 @@
+.file-tree,
+.file-tree ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.file-tree ul {
+  padding-left: 16px;
+}
+
+.tree-item {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  padding: 4px;
+  border: none;
+  background: none;
+  gap: 5px;
+}
+
+.tree-item:hover {
+  color: white;
+}
+
+.tree-item__icon {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  filter: invert(94%) sepia(17%) saturate(90%) hue-rotate(130deg)
+    brightness(85%) contrast(89%);
+}
+
+.tree-item__name {
+  font-size: 0.95rem;
+  font-weight: 400;
+  overflow: hidden;
+  flex-shrink: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.file-tree > li > .tree-item .tree-item__name {
+  font-size: 0.9rem;
+  font-weight: 800;
+}

@@ -1,0 +1,35 @@
+.explorer-panel {
+  padding-right: 3px;
+}
+
+.explorer-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 13px 6px 24px;
+}
+
+.explorer-panel__header-title {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.explorer-panel__header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  transition: background-color 0.1s;
+  border: none;
+  border-radius: 4px;
+  background: none;
+}
+
+.explorer-panel__header-button:hover {
+  background-color: #2d2e2e;
+}
+
+.explorer-panel__header-button-icon {
+  filter: invert(94%) sepia(17%) saturate(90%) hue-rotate(130deg)
+    brightness(85%) contrast(89%);
+}
