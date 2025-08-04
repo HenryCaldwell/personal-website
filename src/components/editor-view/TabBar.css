@@ -1,0 +1,14 @@
+.tab-bar {
+  display: flex;
+  align-items: stretch;
+  height: 52px;
+  user-select: none;
+  border-bottom: 1px solid #3c3c3c;
+  background: #181818;
+}
+
+.tab-bar__tabs {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
