@@ -1,0 +1,42 @@
+.file-path-bar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  padding: 3px 15px 3px 15px;
+  background-color: #1f1f1f;
+}
+
+.file-path-bar__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.file-path-bar__button {
+  font-size: 0.95rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  min-height: 1.25rem;
+  padding: 0;
+  color: #868686;
+  border: none;
+  background: none;
+}
+
+.file-path-bar__button:hover {
+  color: #c2cccc;
+}
+
+.file-path-bar__arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  filter: invert(46%) sepia(96%) saturate(0%) hue-rotate(286deg) brightness(95%)
+    contrast(100%);
+}
+
+.file-path-bar__button:hover .file-path-bar__arrow {
+  filter: invert(89%) sepia(4%) saturate(319%) hue-rotate(131deg)
+    brightness(92%) contrast(89%);
+}
