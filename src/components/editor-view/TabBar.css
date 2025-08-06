@@ -1,7 +1,8 @@
 .tab-bar {
   display: flex;
   align-items: stretch;
-  height: 52px;
+  flex-shrink: 0;
+  height: 46px;
   user-select: none;
   border-bottom: 1px solid #3c3c3c;
   background: #181818;

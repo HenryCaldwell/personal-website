@@ -1,12 +1,6 @@
 import closeIcon from "../../assets/icons/close.svg";
 import "./Tab.css";
 
-/**
- * tab: { id, title, icon }
- * isActive: boolean
- * onSelect: (id) => void
- * onClose: (id) => void
- */
 export default function Tab({ tab, isActive, onSelect, onClose }) {
   return (
     <div
