@@ -1,5 +1,6 @@
 .editor-view {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   width: 100%;
 }
