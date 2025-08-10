@@ -11,7 +11,7 @@ const PANEL_COMPONENTS = {
   source: SourcePanel,
 };
 
-export default function SideBar() {
+export default function SideBar({ onOpenFile }) {
   const [activePanel, setActivePanel] = useLocalStorage(
     "activePanel",
     "explorer"
@@ -28,7 +28,7 @@ export default function SideBar() {
       />
       {ActivePanel && (
         <div className="side-bar-panel">
-          <ActivePanel />
+          <ActivePanel onOpenFile={onOpenFile} />
         </div>
       )}
     </div>

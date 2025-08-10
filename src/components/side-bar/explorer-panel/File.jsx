@@ -1,8 +1,13 @@
 import fileIcon from "../../../assets/icons/file.svg";
 
-export default function File({ node }) {
+export default function File({ node, onOpen }) {
   const openFile = () => {
-    console.log("Open file:", node.name);
+    onOpen?.({
+      id: node.id,
+      title: node.name,
+      icon: fileIcon,
+      content: node.content ?? "",
+    });
   };
 
   return (

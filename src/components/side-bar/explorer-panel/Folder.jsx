@@ -8,6 +8,7 @@ export default function Folder({
   onToggle,
   openFolders,
   onToggleFolder,
+  onOpenFile,
 }) {
   return (
     <li className="tree-item-wrapper">
@@ -37,9 +38,10 @@ export default function Folder({
                 onToggle={() => onToggleFolder(child.id)}
                 openFolders={openFolders}
                 onToggleFolder={onToggleFolder}
+                onOpenFile={onOpenFile}
               />
             ) : (
-              <File key={child.name} node={child} />
+              <File key={child.name} node={child} onOpen={onOpenFile} />
             )
           )}
         </ul>

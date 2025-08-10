@@ -2,7 +2,12 @@ import File from "./File";
 import "./FileTree.css";
 import Folder from "./Folder";
 
-export default function FileTree({ fileData, openFolders, onToggleFolder }) {
+export default function FileTree({
+  fileData,
+  openFolders,
+  onToggleFolder,
+  onOpenFile,
+}) {
   return (
     <ul className="file-tree">
       {fileData.map((node) =>
@@ -14,9 +19,10 @@ export default function FileTree({ fileData, openFolders, onToggleFolder }) {
             onToggle={() => onToggleFolder(node.id)}
             openFolders={openFolders}
             onToggleFolder={onToggleFolder}
+            onOpenFile={onOpenFile}
           />
         ) : (
-          <File key={node.name} node={node} />
+          <File key={node.name} node={node} onOpen={onOpenFile} />
         )
       )}
     </ul>

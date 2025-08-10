@@ -43,6 +43,13 @@ export default function App() {
   const [tabs, setTabs] = useState(initialTabs);
   const [activeId, setActiveId] = useState("java");
 
+  const openTab = (tab) => {
+    setTabs((prev) =>
+      prev.some((t) => t.id === tab.id) ? prev : [...prev, tab]
+    );
+    setActiveId(tab.id);
+  };
+
   const selectTab = (id) => setActiveId(id);
 
   const closeTab = (id) => {
@@ -60,7 +67,7 @@ export default function App() {
   return (
     <div className="app-content">
       <div className="main-content">
-        <SideBar />
+        <SideBar onOpenFile={openTab} />
         {tabs.length > 0 && (
           <EditorView
             tabs={tabs}

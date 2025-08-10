@@ -4,7 +4,7 @@ import { useLocalStorage } from "../../../hooks/useLocalStorage";
 import "./ExplorerPanel.css";
 import FileTree from "./FileTree";
 
-export default function ExplorerPanel() {
+export default function ExplorerPanel({ onOpenFile }) {
   const [openFolders, setOpenFolders] = useLocalStorage(
     "explorerOpenFolders",
     []
@@ -32,6 +32,7 @@ export default function ExplorerPanel() {
         fileData={fileData}
         openFolders={openFolders}
         onToggleFolder={toggleFolder}
+        onOpenFile={onOpenFile}
       />
     </div>
   );
