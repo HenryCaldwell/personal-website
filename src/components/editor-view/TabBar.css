@@ -1,15 +1,30 @@
 .tab-bar {
   display: flex;
+  overflow: auto;
   align-items: stretch;
   flex-shrink: 0;
   height: 46px;
   user-select: none;
-  border-bottom: 1px solid #3c3c3c;
   background: #181818;
+  scrollbar-width: none;
 }
 
 .tab-bar__tabs {
+  position: relative;
   display: flex;
   align-items: stretch;
   width: 100%;
+  min-width: max-content;
+}
+
+.tab-bar__tabs::after {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  content: "";
+  pointer-events: none;
+  background: #3c3c3c;
 }
