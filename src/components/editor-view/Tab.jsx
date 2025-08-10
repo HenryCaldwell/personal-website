@@ -12,7 +12,10 @@ export default function Tab({ tab, isActive, onSelect, onClose }) {
       <span className="tab__title">{tab.title}</span>
       <button
         className="tab__close"
-        onClick={() => onClose(tab.id)}
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose(tab.id);
+        }}
         aria-label={`Close ${tab.title}`}
       >
         <img src={closeIcon} alt="" aria-hidden="true" />
