@@ -20,7 +20,7 @@ export default function Folder({
         aria-expanded={isOpen}
       >
         <img
-          className="tree-item__icon"
+          className="tree-item__arrow"
           src={isOpen ? openFolderIcon : closedFolderIcon}
           alt=""
           aria-hidden="true"

@@ -1,9 +1,23 @@
+import text from "../assets/icons/default.svg";
+import info from "../assets/icons/info.svg";
+import java from "../assets/icons/java.svg";
+import python from "../assets/icons/python.svg";
+import react from "../assets/icons/react.svg";
+import exampleCode from "./Example.java?raw";
+
 export const fileData = [
   {
     id: "root-folder",
     type: "folder",
     name: "HENRY CALDWELL",
     children: [
+      {
+        id: "read-me",
+        type: "file",
+        name: "README.md",
+        icon: info,
+        content: exampleCode,
+      },
       {
         id: "project-folder",
         type: "folder",
@@ -12,17 +26,23 @@ export const fileData = [
           {
             id: "blackjack-cv-ev-engine-file",
             type: "file",
-            name: "blackjack-cv-ev-engine.txt",
+            name: "blackjack-cv-ev-engine.py",
+            icon: python,
+            content: exampleCode,
           },
           {
             id: "simple-blockchain-file",
             type: "file",
-            name: "simple-blockchain.txt",
+            name: "simple-blockchain.java",
+            icon: java,
+            content: exampleCode,
           },
           {
             id: "schedulytics-file",
             type: "file",
-            name: "schedulytics.txt",
+            name: "schedulytics.tsx",
+            icon: react,
+            content: exampleCode,
           },
         ],
       },
@@ -35,6 +55,8 @@ export const fileData = [
             id: "kmw-technology-llc-file",
             type: "file",
             name: "kmw-technology.txt",
+            icon: text,
+            content: exampleCode,
           },
         ],
       },
@@ -47,11 +69,15 @@ export const fileData = [
             id: "undergraduate-file",
             type: "file",
             name: "undergraduate.txt",
+            icon: text,
+            content: exampleCode,
           },
           {
             id: "certifications-file",
             type: "file",
             name: "certifications.txt",
+            icon: text,
+            content: exampleCode,
           },
         ],
       },
@@ -64,16 +90,22 @@ export const fileData = [
             id: "languages-file",
             type: "file",
             name: "languages.txt",
+            icon: text,
+            content: exampleCode,
           },
           {
             id: "software-file",
             type: "file",
             name: "software.txt",
+            icon: text,
+            content: exampleCode,
           },
           {
             id: "tools-file",
             type: "file",
             name: "tools.txt",
+            icon: text,
+            content: exampleCode,
           },
         ],
       },

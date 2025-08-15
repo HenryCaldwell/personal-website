@@ -1,11 +1,9 @@
-import fileIcon from "../../../assets/icons/file.svg";
-
 export default function File({ node, onOpen }) {
   const openFile = () => {
     onOpen?.({
       id: node.id,
       title: node.name,
-      icon: fileIcon,
+      icon: node.icon,
       content: node.content ?? "",
     });
   };
@@ -20,7 +18,7 @@ export default function File({ node, onOpen }) {
       >
         <img
           className="tree-item__icon"
-          src={fileIcon}
+          src={node.icon}
           alt=""
           aria-hidden="true"
         />

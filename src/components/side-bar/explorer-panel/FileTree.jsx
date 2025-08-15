@@ -22,7 +22,7 @@ export default function FileTree({
             onOpenFile={onOpenFile}
           />
         ) : (
-          <File key={node.name} node={node} onOpen={onOpenFile} />
+          <File key={node.id} node={node} onOpen={onOpenFile} />
         )
       )}
     </ul>
