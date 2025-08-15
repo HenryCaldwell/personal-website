@@ -1,10 +1,11 @@
-export default function File({ node, onOpen }) {
+export default function File({ node, onOpen, pathSegments = [] }) {
   const openFile = () => {
     onOpen?.({
       id: node.id,
       title: node.name,
       icon: node.icon,
       content: node.content ?? "",
+      pathSegments,
     });
   };
 

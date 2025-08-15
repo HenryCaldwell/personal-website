@@ -9,7 +9,10 @@ export default function Folder({
   openFolders,
   onToggleFolder,
   onOpenFile,
+  basePath = [],
 }) {
+  const currentPath = [...basePath, node.name];
+
   return (
     <li className="tree-item-wrapper">
       <button
@@ -39,9 +42,15 @@ export default function Folder({
                 openFolders={openFolders}
                 onToggleFolder={onToggleFolder}
                 onOpenFile={onOpenFile}
+                basePath={currentPath}
               />
             ) : (
-              <File key={child.name} node={child} onOpen={onOpenFile} />
+              <File
+                key={child.name}
+                node={child}
+                onOpen={onOpenFile}
+                pathSegments={[...currentPath, child.name]}
+              />
             )
           )}
         </ul>

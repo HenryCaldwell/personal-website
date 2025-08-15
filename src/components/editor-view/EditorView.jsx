@@ -5,6 +5,7 @@ import TabBar from "./TabBar";
 
 export default function EditorView({ tabs, activeId, onSelect, onClose }) {
   const activeTab = tabs.find((t) => t.id === activeId) ?? tabs[0];
+  const pathSegments = activeTab?.pathSegments ?? [];
   const content = activeTab?.content ?? "";
 
   return (
@@ -15,7 +16,7 @@ export default function EditorView({ tabs, activeId, onSelect, onClose }) {
         onSelect={onSelect}
         onClose={onClose}
       />
-      <FilePathBar />
+      <FilePathBar segments={pathSegments} />
       <CodePanel content={content} />
     </div>
   );

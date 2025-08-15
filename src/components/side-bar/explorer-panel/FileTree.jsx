@@ -20,9 +20,15 @@ export default function FileTree({
             openFolders={openFolders}
             onToggleFolder={onToggleFolder}
             onOpenFile={onOpenFile}
+            basePath={[]}
           />
         ) : (
-          <File key={node.id} node={node} onOpen={onOpenFile} />
+          <File
+            key={node.id}
+            node={node}
+            onOpen={onOpenFile}
+            pathSegments={[node.name]}
+          />
         )
       )}
     </ul>

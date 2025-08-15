@@ -1,9 +1,7 @@
 import rightArrow from "../../assets/icons/right.svg";
 import "./FilePathBar.css";
 
-export default function FilePathBar() {
-  const segments = ["test", "another-test", "README.md"];
-
+export default function FilePathBar({ segments = [] }) {
   return (
     <nav className="file-path-bar">
       <ol className="file-path-bar__list">
