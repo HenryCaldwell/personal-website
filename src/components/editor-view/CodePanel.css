@@ -27,7 +27,7 @@
 .line-text {
   font-size: 0.95rem;
   line-height: var(--line-h);
-  display: flex;
+  display: block;
   align-items: center;
   padding: 0 8px;
   white-space: pre;
