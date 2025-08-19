@@ -25,6 +25,16 @@ export const TAGS = {
       </a>
     );
   },
+
+  // <[bold]>text<[/bold]>
+  bold(children) {
+    return <strong>{children}</strong>;
+  },
+
+  // <[italic]>text<[/italic]>
+  italic(children) {
+    return <em>{children}</em>;
+  },
 };
 
 export const allowedTags = new Set(Object.keys(TAGS));
