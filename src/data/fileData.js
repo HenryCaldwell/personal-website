@@ -3,7 +3,11 @@ import info from "../assets/icons/info.svg";
 import java from "../assets/icons/java.svg";
 import python from "../assets/icons/python.svg";
 import react from "../assets/icons/react.svg";
+import blackjackCVEVEngine from "./BlackjackCVEVEngine.java?raw";
 import exampleCode from "./Example.java?raw";
+import personalWebsite from "./PersonalWebsite.java?raw";
+import README from "./README.java?raw";
+import simpleBlockchain from "./SimpleBlockchain.java?raw";
 
 export const fileData = [
   {
@@ -16,7 +20,7 @@ export const fileData = [
         type: "file",
         name: "README.md",
         icon: info,
-        content: exampleCode,
+        content: README,
       },
       {
         id: "project-folder",
@@ -28,21 +32,28 @@ export const fileData = [
             type: "file",
             name: "blackjack-cv-ev-engine.py",
             icon: python,
-            content: exampleCode,
+            content: blackjackCVEVEngine,
           },
           {
             id: "simple-blockchain-file",
             type: "file",
             name: "simple-blockchain.java",
             icon: java,
-            content: exampleCode,
+            content: simpleBlockchain,
           },
+          // {
+          //   id: "schedulytics-file",
+          //   type: "file",
+          //   name: "schedulytics.tsx",
+          //   icon: react,
+          //   content: exampleCode,
+          // },
           {
-            id: "schedulytics-file",
+            id: "personal-website-file",
             type: "file",
-            name: "schedulytics.tsx",
+            name: "personal-website.jsx",
             icon: react,
-            content: exampleCode,
+            content: personalWebsite,
           },
         ],
       },
