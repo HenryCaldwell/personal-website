@@ -18,7 +18,9 @@
  * '------------------------------------------------------------------------------------------------'
  */
 
+
 // <[link, https://github.com/HenryCaldwell/blackjack-cv-ev-engine]>GitHub<[/link]> <[link, https://www.youtube.com/watch?v=opMLxb1acOM]>Demo<[/link]>
+
 
 /**
  * <[bold]>DESCRIPTION<[/bold]>
@@ -27,6 +29,7 @@
  * via a <[italic]>custom Hungarian-based tracker<[/italic]>, groups cards into dealer/player hands by overlap, and computes
  * expected values using a <[italic]>Java<[/italic]> backend accessed through JPype.
  */
+
 
  /**
  * <[bold]>STACK<[/bold]>
@@ -37,6 +40,7 @@
  * - <[bold]>Interop<[/bold]>: <[italic]>JPype<[/italic]> <[color, #a6a6a6]>(Python, Java)<[/color]>
  */
 
+ 
 /**
  * <[bold]>FEATURES<[/bold]>
  * - <[bold]>Card Detection<[/bold]>: Ultralytics YOLO trained and optimized on <[italic]>5,000 custom images<[/italic]> for robust,
@@ -45,8 +49,8 @@
  *   pruning of stale tracks.
  * - <[bold]>Scoring<[/bold]>: Overlap clustering forming dealer/player hands. Blackjack scoring handles soft aces and
  *   10 value card normalization.
- * - <[bold]>Real-Time Evaluation<[/bold]>: Java EV core (via JPype) recursively computes stand, hit, double, split,
- *   surrender. Memoization with hashed <[italic]>StateKey<[/italic]> for speed.
+ * - <[bold]>Real-Time Evaluation<[/bold]>: Java expected value core (via JPype) recursively computes stand, hit,
+ *   double, split, surrender. Memoization with hashed <[italic]>StateKey<[/italic]> for speed.
  * - <[bold]>Threaded Pipeline<[/bold]>: Dedicated capture, analysis, and display threads. Bounded queues drop oldest
  *   frames to stay responsive.
  * - <[bold]>Live Display<[/bold]>: OpenCV window with Matplotlib overlays. Rich side panel with hands, expected value

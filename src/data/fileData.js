@@ -4,10 +4,13 @@ import java from "../assets/icons/java.svg";
 import python from "../assets/icons/python.svg";
 import react from "../assets/icons/react.svg";
 import blackjackCVEVEngine from "./BlackjackCVEVEngine.java?raw";
-import exampleCode from "./Example.java?raw";
+import certifications from "./Certifications.java?raw";
+import KMWTechnology from "./KMWTechnology.java?raw";
 import personalWebsite from "./PersonalWebsite.java?raw";
 import README from "./README.java?raw";
 import simpleBlockchain from "./SimpleBlockchain.java?raw";
+import skills from "./Skills.java?raw";
+import undergraduate from "./Undergraduate.java?raw";
 
 export const fileData = [
   {
@@ -67,7 +70,7 @@ export const fileData = [
             type: "file",
             name: "kmw-technology.txt",
             icon: text,
-            content: exampleCode,
+            content: KMWTechnology,
           },
         ],
       },
@@ -81,42 +84,21 @@ export const fileData = [
             type: "file",
             name: "undergraduate.txt",
             icon: text,
-            content: exampleCode,
+            content: undergraduate,
+          },
+          {
+            id: "skills-file",
+            type: "file",
+            name: "skills.txt",
+            icon: text,
+            content: skills
           },
           {
             id: "certifications-file",
             type: "file",
             name: "certifications.txt",
             icon: text,
-            content: exampleCode,
-          },
-        ],
-      },
-      {
-        id: "skills",
-        type: "folder",
-        name: "skills",
-        children: [
-          {
-            id: "languages-file",
-            type: "file",
-            name: "languages.txt",
-            icon: text,
-            content: exampleCode,
-          },
-          {
-            id: "software-file",
-            type: "file",
-            name: "software.txt",
-            icon: text,
-            content: exampleCode,
-          },
-          {
-            id: "tools-file",
-            type: "file",
-            name: "tools.txt",
-            icon: text,
-            content: exampleCode,
+            content: certifications,
           },
         ],
       },

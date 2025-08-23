@@ -8,7 +8,9 @@
  * '--------------------------------------------------------------------------------'
  */
 
+
 // <[link, https://github.com/HenryCaldwell/personal-website]>GitHub<[/link]> <[link, https://google.com]>Website<[/link]>
+
 
 /**
  * <[bold]>DESCRIPTION<[/bold]>
@@ -18,12 +20,14 @@
  * so visitors can <[italic]>browse<[/italic]> projects like code.
  */
 
+
  /**
  * <[bold]>STACK<[/bold]>
  * - <[bold]>Languages<[/bold]>: <[italic]>JavaScript<[/italic]>, <[italic]>CSS<[/italic]>
  * - <[bold]>Framework/Build<[/bold]>: <[italic]>React<[/italic]>, <[italic]>Vite<[/italic]>.
  */
 
+ 
 /**
  * <[bold]>FEATURES<[/bold]>
  * - <[bold]>Editor Layout<[/bold]>: Activity bar, side panels, tab strip, breadcrumb path bar, and code viewport with line

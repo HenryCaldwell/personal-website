@@ -9,7 +9,9 @@
  * '--------------------------------------------------------------------------------------'
  */
 
+
 // <[link, https://github.com/HenryCaldwell/java-blockchain]>GitHub<[/link]>
+
 
 /**
  * <[bold]>DESCRIPTION<[/bold]>
@@ -20,12 +22,14 @@
  * documented error codes.
  */
 
+
  /**
  * <[bold]>STACK<[/bold]>
  * - <[bold]>Language<[/bold]>: <[italic]>Java<[/italic]>
  * - <[bold]>Crypto<[/bold]>: <[italic]>SHA-256<[/italic]> <[color, #a6a6a6]>(hashing)<[/color]>, <[italic]>Bouncy Castle<[/italic]> <[color, #a6a6a6]>(ECDSA)<[/color]>
  */
 
+ 
 /**
  * <[bold]>FEATURES<[/bold]>
  * - <[bold]>Proof of Work<[/bold]>: Adjustable difficulty with nonce search until the block hash meets the target.
