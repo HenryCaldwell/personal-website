@@ -9,7 +9,7 @@
  */
 
 
-// <[link, https://github.com/HenryCaldwell/personal-website]>GitHub<[/link]> <[link, https://google.com]>Website<[/link]>
+// <[link, https://github.com/HenryCaldwell/personal-website]>GitHub<[/link]> <[link, https://henrycaldwell.vercel.app]>Website<[/link]>
 
 
 /**
