@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
+
 import Tab from "./Tab";
+
 import "./TabBar.css";
 
 export default function TabBar({ tabs, activeId, onSelect, onClose }) {

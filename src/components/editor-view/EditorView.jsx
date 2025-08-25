@@ -1,7 +1,8 @@
 import CodePanel from "./CodePanel";
-import "./EditorView.css";
 import FilePathBar from "./FilePathBar";
 import TabBar from "./TabBar";
+
+import "./EditorView.css";
 
 export default function EditorView({ tabs, activeId, onSelect, onClose }) {
   const activeTab = tabs.find((t) => t.id === activeId) ?? tabs[0];

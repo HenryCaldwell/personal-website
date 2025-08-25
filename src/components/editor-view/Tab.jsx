@@ -1,4 +1,5 @@
 import closeIcon from "../../assets/icons/close.svg";
+
 import "./Tab.css";
 
 export default function Tab({ tab, isActive, onSelect, onClose, innerRef }) {

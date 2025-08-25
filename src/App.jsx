@@ -1,9 +1,11 @@
-import "./App.css";
 import EditorView from "./components/editor-view/EditorView";
 import SideBar from "./components/side-bar/SideBar";
 import StatusBar from "./components/StatusBar";
+
 import { fileData } from "./data/fileData";
 import { useLocalStorage } from "./hooks/useLocalStorage";
+
+import "./App.css";
 
 const README_ID = "read-me";
 

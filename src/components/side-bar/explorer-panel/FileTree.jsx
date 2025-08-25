@@ -1,6 +1,7 @@
 import File from "./File";
-import "./FileTree.css";
 import Folder from "./Folder";
+
+import "./FileTree.css";
 
 export default function FileTree({
   fileData,

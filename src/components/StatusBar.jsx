@@ -5,6 +5,7 @@ import linkedinIcon from "../assets/icons/linkedin.svg";
 import remoteIcon from "../assets/icons/remote.svg";
 import smileyIcon from "../assets/icons/smiley.svg";
 import warningIcon from "../assets/icons/warning.svg";
+
 import "./StatusBar.css";
 
 export default function StatusBar({ left, right }) {

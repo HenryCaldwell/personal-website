@@ -1,8 +1,11 @@
-import ellipsis from "../../../assets/icons/ellipsis.svg";
+import FileTree from "./FileTree";
+
 import { fileData } from "../../../data/fileData";
 import { useLocalStorage } from "../../../hooks/useLocalStorage";
+
+import ellipsis from "../../../assets/icons/ellipsis.svg";
+
 import "./ExplorerPanel.css";
-import FileTree from "./FileTree";
 
 export default function ExplorerPanel({ onOpenFile }) {
   const [openFolders, setOpenFolders] = useLocalStorage(

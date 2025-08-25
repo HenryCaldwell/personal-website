@@ -1,4 +1,5 @@
 import rightArrow from "../../assets/icons/right.svg";
+
 import "./FilePathBar.css";
 
 export default function FilePathBar({ segments = [] }) {

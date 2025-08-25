@@ -3,6 +3,7 @@ import info from "../assets/icons/info.svg";
 import java from "../assets/icons/java.svg";
 import python from "../assets/icons/python.svg";
 import react from "../assets/icons/react.svg";
+
 import blackjackCVEVEngine from "./BlackjackCVEVEngine.java?raw";
 import certifications from "./Certifications.java?raw";
 import KMWTechnology from "./KMWTechnology.java?raw";

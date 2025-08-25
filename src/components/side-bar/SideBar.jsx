@@ -1,9 +1,11 @@
-import { useLocalStorage } from "../../hooks/useLocalStorage";
 import ActivityBar from "./activity-bar/ActivityBar";
 import ExplorerPanel from "./explorer-panel/ExplorerPanel";
 import SearchPanel from "./search-panel/SearchPanel";
-import "./SideBar.css";
 import SourcePanel from "./source-panel/SourcePanel";
+
+import { useLocalStorage } from "../../hooks/useLocalStorage";
+
+import "./SideBar.css";
 
 const PANEL_COMPONENTS = {
   explorer: ExplorerPanel,

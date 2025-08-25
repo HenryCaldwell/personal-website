@@ -1,6 +1,7 @@
 import explorerIcon from "../../../assets/icons/files.svg";
 import searchIcon from "../../../assets/icons/search.svg";
 import sourceIcon from "../../../assets/icons/source.svg";
+
 import "./ActivityBar.css";
 
 export default function ActivityBar({ active, onSelect }) {

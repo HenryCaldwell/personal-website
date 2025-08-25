@@ -1,4 +1,3 @@
-// More descriptive name (and keep a compat alias at the end)
 export const INLINE_TAG_REGEX =
   /<\[(\/)?\s*([a-z][a-z0-9-]*)\s*(?:,\s*([^\]]+))?\s*\]>/gi;
 

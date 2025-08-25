@@ -1,7 +1,9 @@
 import React, { useMemo } from "react";
-import "./CodePanel.css";
+
 import { parseContent } from "./inline-tags/parser";
 import { TAGS, allowedTags } from "./inline-tags/tags";
+
+import "./CodePanel.css";
 
 export default function CodePanel({ content = "" }) {
   const parsedContent = useMemo(

@@ -1,6 +1,7 @@
+import File from "./File";
+
 import openFolderIcon from "../../../assets/icons/down.svg";
 import closedFolderIcon from "../../../assets/icons/right.svg";
-import File from "./File";
 
 export default function Folder({
   node,
