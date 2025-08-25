@@ -2,7 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link id="favicon" rel="icon" type="image/svg+xml" sizes="any" href="/account-light.svg" />
+    <script>
+    (function () {
+      const mql = window.matchMedia('(prefers-color-scheme: dark)');
+      const el = document.getElementById('favicon');
+
+      function setFavicon() {
+        el.href = mql.matches ? '/account-dark.svg?v=dark' : '/account-light.svg?v=light';
+      }
+
+      setFavicon();
+      mql.addEventListener('change', setFavicon);
+    })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,7 +23,7 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Henry Caldwell</title>
   </head>
   <body>
     <div id="root"></div>
