@@ -4,8 +4,8 @@
   justify-content: space-between;
   width: 100%;
   height: 1.75rem;
-  border-top: 1px solid #2b2b2b;
-  background-color: #181818;
+  border-top: 1px solid var(--border);
+  background-color: var(--bg);
 }
 
 .status-bar__left {
@@ -31,16 +31,15 @@
 }
 
 .status-bar__item:not(.status-bar__item--focused):hover {
-  background-color: #2b2b2b;
+  background-color: var(--border);
 }
 
 .status-bar__item--focused {
-  background-color: #4678cd;
+  background-color: var(--accent);
 }
 
 .status-bar__item-image {
   width: auto;
   height: 1.1rem;
-  filter: invert(94%) sepia(17%) saturate(90%) hue-rotate(130deg)
-    brightness(85%) contrast(89%);
+  filter: var(--icon-active-filter);
 }

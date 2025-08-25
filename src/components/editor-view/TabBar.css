@@ -5,7 +5,7 @@
   flex-shrink: 0;
   height: 46px;
   user-select: none;
-  background: #181818;
+  background: var(--bg);
   scrollbar-width: none;
 }
 
@@ -26,5 +26,5 @@
   height: 1px;
   content: "";
   pointer-events: none;
-  background: #3c3c3c;
+  background: var(--border-strong);
 }

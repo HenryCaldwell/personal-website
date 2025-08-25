@@ -3,8 +3,8 @@
   height: 100%;
   border-width: 1px 1px 0 0;
   border-style: solid;
-  border-color: #2b2b2b;
-  background-color: #181818;
+  border-color: var(--border);
+  background-color: var(--bg);
 }
 
 .activity-bar__button {
@@ -19,18 +19,16 @@
 }
 
 .activity-bar__button--focused {
-  border-left: 2px solid #4678cd;
+  border-left: 2px solid var(--accent);
 }
 
 .activity-bar__button:hover .activity-bar__button__icon,
 .activity-bar__button--focused .activity-bar__button__icon {
-  filter: invert(94%) sepia(17%) saturate(90%) hue-rotate(130deg)
-    brightness(85%) contrast(89%);
+  filter: var(--icon-active-filter);
 }
 
 .activity-bar__button__icon {
   width: 100%;
   height: 100%;
-  filter: invert(46%) sepia(96%) saturate(0%) hue-rotate(286deg) brightness(95%)
-    contrast(100%);
+  filter: var(--icon-muted-filter);
 }

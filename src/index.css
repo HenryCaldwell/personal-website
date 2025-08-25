@@ -1,10 +1,36 @@
 :root {
-  font-family: "Roboto", monospace;
+  --border: #2b2b2b;
+  --font-ui: "Roboto", monospace;
+  --font-code: "Source Code Pro", Menlo, monospace;
+  --bg: #181818;
+  --surface: #1f1f1f;
+  --surface-hover: #2d2e2e;
+  --surface-hover-strong: #313232;
+  --border-strong: #3c3c3c;
+  --text: #c1cccc;
+  --text-weak: #9d9d9d;
+  --text-muted: #868686;
+  --text-code: #d4d4d4;
+  --text-inverse: #fff;
+  --accent: #4678cd;
+  --accent-2: #09f;
+  --icon-muted-filter: invert(46%) sepia(96%) saturate(0%) hue-rotate(286deg)
+    brightness(95%) contrast(100%);
+  --icon-active-filter: invert(89%) sepia(4%) saturate(319%) hue-rotate(131deg)
+    brightness(92%) contrast(89%);
+  --icon-weak-filter: invert(69%) sepia(9%) saturate(0%) hue-rotate(252deg)
+    brightness(89%) contrast(88%);
+  --icon-inverse-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+    brightness(104%) contrast(101%);
+}
+
+:root {
+  font-family: var(--font-ui);
   font-weight: 400;
   line-height: 1.5;
 
-  color: #c1cccc;
-  background-color: #1f1f1f;
+  color: var(--text);
+  background-color: var(--surface);
 
   color-scheme: light dark;
   font-synthesis: none;

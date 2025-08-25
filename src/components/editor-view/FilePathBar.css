@@ -4,7 +4,7 @@
   justify-content: left;
   width: 100%;
   padding: 3px 15px 3px 15px;
-  background-color: #1f1f1f;
+  background-color: var(--surface);
 }
 
 .file-path-bar__list {
@@ -20,23 +20,21 @@
   align-items: center;
   min-height: 1.25rem;
   padding: 0;
-  color: #868686;
+  color: var(--text-muted);
   border: none;
   background: none;
 }
 
 .file-path-bar__button:hover {
-  color: #c2cccc;
+  color: var(--text);
 }
 
 .file-path-bar__arrow {
   width: 1.25rem;
   height: 1.25rem;
-  filter: invert(46%) sepia(96%) saturate(0%) hue-rotate(286deg) brightness(95%)
-    contrast(100%);
+  filter: var(--icon-muted-filter);
 }
 
 .file-path-bar__button:hover .file-path-bar__arrow {
-  filter: invert(89%) sepia(4%) saturate(319%) hue-rotate(131deg)
-    brightness(92%) contrast(89%);
+  filter: var(--icon-active-filter);
 }

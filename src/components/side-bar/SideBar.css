@@ -5,6 +5,6 @@
 .side-bar-panel {
   overflow: auto;
   width: 20rem;
-  border-right: 1px solid #2b2b2b;
-  background: #181818;
+  border-right: 1px solid var(--border);
+  background: var(--bg);
 }

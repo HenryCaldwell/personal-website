@@ -26,10 +26,9 @@
 }
 
 .explorer-panel__header-button:hover {
-  background-color: #2d2e2e;
+  background-color: var(--surface-hover);
 }
 
 .explorer-panel__header-button-icon {
-  filter: invert(94%) sepia(17%) saturate(90%) hue-rotate(130deg)
-    brightness(85%) contrast(89%);
+  filter: var(--icon-active-filter);
 }

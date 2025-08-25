@@ -24,7 +24,7 @@
 }
 
 .tree-item:hover {
-  color: white;
+  color: var(--text-inverse);
 }
 
 .tree-item__icon {
@@ -37,8 +37,7 @@
   flex-shrink: 0;
   width: 1.1rem;
   height: 1.1rem;
-  filter: invert(94%) sepia(17%) saturate(90%) hue-rotate(130deg)
-    brightness(85%) contrast(89%);
+  filter: var(--icon-active-filter);
 }
 
 .tree-item__name {

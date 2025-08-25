@@ -6,20 +6,20 @@
   flex: 0 0 auto;
   padding: 0 0.65rem 0 1rem;
   cursor: pointer;
-  color: #9d9d9d;
-  border-right: 1px solid #333;
+  color: var(--text-weak);
+  border-right: 1px solid var(--border);
   gap: 10px;
 }
 
 .tab:hover {
-  background-color: #1f1f1f;
+  background-color: var(--surface);
 }
 
 .tab--active {
   position: relative;
-  color: #fff;
-  background: #1f1f1f;
-  box-shadow: inset 0 1px 0 0 #09f;
+  color: var(--text-inverse);
+  background: var(--surface);
+  box-shadow: inset 0 1px 0 0 var(--accent-2);
 }
 
 .tab--active::after {
@@ -31,7 +31,7 @@
   height: 1px;
   content: "";
   pointer-events: none;
-  background: #1f1f1f;
+  background: var(--surface);
 }
 
 .tab__image {
@@ -57,17 +57,15 @@
 }
 
 .tab__close:hover {
-  background: #313232;
+  background: var(--surface-hover-strong);
 }
 
 .tab__close img {
   width: 1.2rem;
   height: 1.2rem;
-  filter: invert(69%) sepia(9%) saturate(0%) hue-rotate(252deg) brightness(89%)
-    contrast(88%);
+  filter: var(--icon-weak-filter);
 }
 
 .tab--active .tab__close img {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(52deg) brightness(104%)
-    contrast(101%);
+  filter: var(--icon-inverse-filter);
 }
