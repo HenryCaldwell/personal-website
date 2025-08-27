@@ -44,18 +44,15 @@
 /**
  * <[bold]>ORGANIZATION<[/bold]>
  * root/
- * ├─ <[bold]>README.md<[/bold]>: Landing page with overview, navigation, and section links.
- * ├─ projects/: Code-centric highlights
- * │   ├─ <[bold]>blackjack-cv-ev-engine.py<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- * │   ├─ <[bold]>simple-blockchain.java<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- * │   └─ <[bold]>schedulytics.tsx<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- * ├─ experience/: Professional history
- * │   └─ <[bold]>kmw-technology.txt<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- * ├─ education/: Academic background
- * │   ├─ <[bold]>undergraduate.txt<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- * │   └─ <[bold]>certifications.txt<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- * └─ skills/: Relevant skills
- *     ├─ <[bold]>languages.txt<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- *     ├─ <[bold]>software.txt<[/bold]>: <[italic]>One sentence desc.<[/italic]>
- *     └─ <[bold]>tools.txt<[/bold]>: <[italic]>One sentence desc.<[/italic]>
+ * ├─ <[bold]>README.md<[/bold]>:                      <[italic]>Landing page with overview, navigation, and section links.<[/italic]>
+ * ├─ projects/:
+ * │   ├─ <[bold]>blackjack-cv-ev-engine.py<[/bold]>:  <[italic]>Real-time computer vision engine that detects cards, tracks hands, and computes optimal blackjack decisions.<[/italic]>
+ * │   ├─ <[bold]>simple-blockchain.java<[/bold]>:     <[italic]>UTXO-based blockchain implementation featuring proof-of-work mining, ECDSA-signed transactions, and a full-chain verifier.<[/italic]>
+ * │   └─ <[bold]>personal-website.jsx<[/bold]>:       <[italic]>This website!<[/italic]>
+ * ├─ experience/:
+ * │   └─ <[bold]>kmw-technology.txt<[/bold]>:         <[italic]>Co-op as a Search and AI Software Engineer at KMW Technology contributing to the Lucille Java ETL framework.<[/italic]>
+ * └─ education/:
+ *     ├─ <[bold]>undergraduate.txt<[/bold]>:          <[italic]>Academic record detailing my Computer Science degree progress with coursework.<[/italic]>
+ *     ├─ <[bold]>certifications.txt<[/bold]>:         <[italic]>List of professional certifications earned.<[/italic]>
+ *     └─ <[bold]>skills.txt<[/bold]>:                 <[italic]>Summary of technical languages, frameworks, tools, and platforms I’ve worked with.<[/italic]>
  */
